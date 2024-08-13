@@ -5,12 +5,6 @@ layout: default
 
 # Welcome to my-little-dev-blog! Here are the basics.
 
----
-
-Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/welcome-to-my-little-dev-blog-here-are-the-basics-for-the-blog-readme.md) to view this post on Github.
-
----
-
 ## About
 
 - This is a blog where I share knowledge related to my work.

@@ -5,12 +5,6 @@ layout: default
 
 # How to enable anyone to use what you built in R from ChatGPT
 
----
-
-Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/how-to-enable-anyone-to-use-what-you-built-in-R-from-ChatGPT.md) to view this post on Github.
-
----
-
 # Demo
 
 ![Demo](https://i.imgur.com/IpdxuZU.png)

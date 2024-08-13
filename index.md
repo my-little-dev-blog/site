@@ -3,13 +3,6 @@ title: Blog Posts
 layout: default
 ---
 
----
-
-Click [here](https://github.com/my-little-dev-blog/site/) to view this blog on Github.
-
----
-
-
 # Blog Posts
 
 - [Welcome to my-little-dev-blog! Here are the basics.](https://my-little-dev-blog.github.io/site/posts/welcome-to-my-little-dev-blog-here-are-the-basics-for-the-blog-readme.html)
