@@ -102,9 +102,9 @@ paste0("Hello from our R web service ", name, "!")
 
 Which, when run, produces:
 
-```markdown
+
 > Hello from our R web service Bob!
-```
+
 
 # Step 2: Turn your R code into an R function
 
