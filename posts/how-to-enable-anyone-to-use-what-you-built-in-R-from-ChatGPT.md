@@ -19,15 +19,15 @@ Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/how-to-e
 
 ## What will you show me in this post?
 
-In this post, I'll walk you through the process of turning a simple R script into a Plumber API, deploying that API as a publicly accessible web service on Google Cloud, and integrating it with ChatGPT as a custom action within a custom GPT.
+In this post, I'll walk you through the process of turning a simple R script into a Plumber API, deploying that API as a publicly accessible web service on Google Cloud, and integrating that web service with ChatGPT as a custom action within a custom GPT.
 
 ## What steps will we complete along the way?
 
-1. Write some R code that does something useful
-2. Turn your R code into an R function
-3. Turn your R function into an API using Plumber
-4. Turn your Plumber API into a web service using Google Cloud
-5. Turn your web service into a ChatGPT custom Action using a My GPT
+1. [Write some R code that does something useful](#write-some-r-code-that-does-something-useful)
+2. [Turn your R code into an R function](#turn-your-r-code-into-an-r-function)
+3. [Turn your R function into an API using Plumber](#turn-your-r-function-into-an-api-using-plumber)
+4. [Turn your Plumber API into a publicly accessible web service using Google Cloud](#turn-your-plumber-api-into-a-publicly-accessible-web-service-using-google-cloud)
+5. [Turn your publicly accessible web service into a ChatGPT custom Action using a My GPT](#turn-your-publicly-accessible-web-service-into-a-chatgpt-custom-action-using-a-my-gpt)
 
 ## Who is this post for?
 
@@ -145,7 +145,7 @@ function(name = "Bob")
 
 You may need to install Plumber and its dependencies first, if this is your first time using it.
 
-# Step 4: Turn your Plumber API into a web service using Google Cloud
+# Step 4: Turn your Plumber API into a publicly accessible web service using Google Cloud
 
 ## Step 4.1: Log into your Google account
 
@@ -457,7 +457,7 @@ And you will see the same response as we did in Step 4.6 above:
 
 Beautiful.
 
-# Step 5: Turn your web service into a ChatGPT custom Action using a My GPT
+# Step 5: Turn your publicly accessible web service into a ChatGPT custom Action using a My GPT
 
 Now we will enable ChatGPT users to interact with our web service natively from ChatGPT!
 
