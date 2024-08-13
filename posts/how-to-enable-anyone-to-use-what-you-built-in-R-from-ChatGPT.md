@@ -95,14 +95,14 @@ For the purposes of this demo, we will keep this as simple as possible. This R c
 
 Here's our R code:
 
-```
+```r
 name <- "Bob"
 paste0("Hello from our R web service ", name, "!")
 ```
 
 Which, when run, produces:
 
-```
+```markdown
 Hello from our R web service Bob!
 ```
 
@@ -110,7 +110,7 @@ Hello from our R web service Bob!
 
 Here's how we turn this code into an R function:
 
-```
+```r
 sayHi <-
   function(name = "Bob")
     {
@@ -120,13 +120,13 @@ sayHi <-
 
 Which, when called:
 
-```
+```r
 sayHi("Monica")
 ```
 
 Produces:
 
-```
+```markdown
 Hello from our R web service Monica!
 ```
 
@@ -134,7 +134,7 @@ Hello from our R web service Monica!
 
 Here's how we turn this function into an API using Plumber:
 
-```
+```r
 library(plumber)
 
 #* @apiTitle Our Little API
@@ -175,7 +175,7 @@ We will need to configure our VM. To do this, find the SSH link next to the name
 
 Be sure your package list is updated by running the following command:
 
-```
+```bash
 sudo apt-get update
 ```
 
@@ -183,7 +183,7 @@ And then wait for it to finish doing its thing.
 
 Then install R by running the following command:
 
-```
+```bash
 sudo apt-get install r-base
 ```
 
@@ -193,7 +193,7 @@ And then wait for it to finish doing its thing.
 
 Now, open R in the terminal by running the following command:
 
-```
+```bash
 R
 ```
 
@@ -201,7 +201,7 @@ You will know you are in R because you will see the usual R startup stuff. Also,
 
 Now, install Plumber from the R session by running the following command:
 
-```
+```r
 install.packages("plumber")
 ```
 
@@ -213,13 +213,13 @@ After all that is done, you will get some warning messages about some non-zero e
 
 To fix, first, run the following command (again):
 
-```
+```bash
 sudo apt-get update
 ```
 
 Then, run this command:
 
-```
+```bash
 sudo apt-get upgrade
 ```
 
@@ -229,7 +229,7 @@ Then wait for it to finish doing its thing. This one also takes a few minutes.
 
 After it has finished, run this command:
 
-```
+```bash
 sudo apt-get install build-essential libcurl4-openssl-dev libssl-dev libxml2-dev libgit2-dev
 ```
 
@@ -239,19 +239,19 @@ Then wait for it to finish doing its thing.
 
 Now, run this command to start an R session:
 
-```
+```bash
 R
 ```
 
 Then run this:
 
-```
+```r
 install.packages("curl")
 ```
 
 Then this:
 
-```
+```r
 install.packages("sodium")
 ```
 
@@ -259,7 +259,7 @@ You'll get an error.  Again, this is okay.
 
 Run this command to exit the R session:
 
-```
+```r
 quit()
 ```
 
@@ -267,25 +267,25 @@ Type n and hit enter to decline saving the workspace.
 
 Then, run this command in Bash:
 
-```
+```bash
 sudo apt-get install libsodium-dev
 ```
 
 And then run this:
 
-```
+```bash
 export PKG_CONFIG_PATH=/usr/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH
 ```
 
 Then, start an R session:
 
-```
+```bash
 R
 ```
 
 And run this from within the R session:
 
-```
+```r
 install.packages("sodium")
 ```
 
@@ -293,13 +293,13 @@ We're all set.
 
 Now, while still in the R session, run:
 
-```
+```r
 install.packages("webutils")
 ```
 
 And then, while still in the R session, run:
 
-```
+```r
 install.packages("plumber")
 ```
 
@@ -307,13 +307,13 @@ You won't see any warnings this time. Plumber is now properly installed.
 
 You can confirm this by running (still in the R session):
 
-```
+```r
 library(plumber)
 ```
 
 Run the following command to exit the R session and return to Bash:
 
-```
+```r
 quit()
 ```
 
@@ -323,7 +323,7 @@ Type n and hit enter to decline saving the workspace image.
 
 In Step 3 above we turned our function into an API using Plumber:
 
-```
+```r
 library(plumber)
 
 #* @apiTitle Our Little API
@@ -340,7 +340,7 @@ Create an R script on your local machine that contains this code.  Save it as pl
 
 Then, create a separate R script on your local machine that contains this code:
 
-```
+```r
 library(plumber)
 r <- plumb("plumber_script.R")
 r$run(host = "0.0.0.0", port=8000)
@@ -356,13 +356,13 @@ Now, try uploading the file again. It should work. And then upload the start_plu
 
 Now you can run the following command to see that the files uploaded properly:
 
-```
+```bash
 ls
 ```
 
 This should return:
 
-```
+```markdown
 R  plumber_script.R  start_plumber.R
 ```
 
@@ -370,13 +370,13 @@ Perfect.
 
 Now we can launch our web service by running the following command:
 
-```
+```bash
 Rscript start_plumber.R
 ```
 
 You will see the following in your Bash session:
 
-```
+```markdown
 Running plumber API at http://0.0.0.0:8000
 Running swagger Docs at http://127.0.0.1:8000/__docs__/
 ```
@@ -391,13 +391,13 @@ Don't close the window in which your SSH session is running. We need the web ser
 
 Return to the screen on which you clicked to start the SSH session in Step 4.5 above. Click the SSH link again -- to start a second SSH session. In this second session, run the following command:
 
-```
+```bash
 curl "http://127.0.0.1:8000/greet"
 ```
 
 You will see the following response from your web service:
 
-```
+```markdown
 {"message":["Hello from our R web service Bob!"]}
 ```
 
@@ -405,13 +405,13 @@ It is working!This is exactly what we programmed our Plumber API to do. The web 
 
 You can also pass a different value for your name parameter to the service and watch it react. For instance, you can run:
 
-```
+```bash
 curl "http://127.0.0.1:8000/greet?name=Monica"
 ```
 
 And you will see:
 
-```
+```markdown
 {"message":["Hello from our R web service Monica!"]}
 ```
 
@@ -443,31 +443,31 @@ Now, we need to return to the Compute Engine screen within our Google Cloud proj
 
 Now, open a browser tab, and enter the following in its URL bar:
 
-```
+```markdown
 [paste your VM instance's External IP here]:8000/greet?name=Monica
 ```
 
 Then press enter.
 
-Be sure that when you paste your VM instance's external IP in the command above it looks like this (I'm using 5s as placeholders for your IP's actual numbers.): 55.555.555.55:8000/greet.
+Be sure that when you paste your VM instance's external IP into your browser's URL bar it looks like this (I'm using 5s as placeholders for your IP's actual numbers.): 55.555.555.55:8000/greet.
 
 Your browser will show you the same response from your web service as when we interacted with it from within your VM's environment in Step 4.6 above.  That is:
 
-```
+```markdown
 {"message":["Hello from our R web service Bob!"]}
 ```
 
 Voila! Now anyone who can use the internet can use your web service! It is working!
 
-To show how the service can react dynamically, you can run this command, as we did in Step 4.6 above:
+To show how the service can react dynamically, you can put this into your browser's URL bar, as we did in Step 4.6 above:
 
-```
+```markdown
 [paste your VM instance's External IP here]:8000/greet
 ```
 
 And you will see the same response as we did in Step 4.6 above:
 
-```
+```markdown
 {"message":["Hello from our R web service Monica!"]}
 ```
 
@@ -487,31 +487,31 @@ ChatGPT requires us to have an HTTPS URL. As of now our URL is an HTTP URL. We w
 
 Go back to the window that contains the second SSH session we created for Step 4.6 and 4.7 above. Run the following command to download Ngrok:
 
-```
+```bash
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 ```
 
 Then, run this command:
 
-```
+```bash
 tar -xvzf ngrok-v3-stable-linux-amd64.tgz
 ```
 
 Then, run this command:
 
-```
+```bash
 sudo mv ngrok /usr/local/bin/ngrok
 ```
 
 And, finally, verify the installation of ngrok by running this command:
 
-```
+```bash
 ngrok version
 ```
 
 You should see something like:
 
-```
+```bash
 ngrok version 3.xx.x
 ```
 
@@ -523,13 +523,13 @@ In a new browser tab, go to https://ngrok.com/. Click Sign Up. Click Sign up wit
 
 Now, in your second SSH session, paste the command you just copied and run it.
 
-```
+```bash
 ngrok config add-authtoken [your authtoken goes here]
 ```
 
 You should see something like:
 
-```
+```markdown
 Authtoken saved to configuration file: [...]/.config/ngrok/ngrok.yml
 ```
 
@@ -539,13 +539,13 @@ Where [...] is the correct path prefix given how your VM is configured.
 
 Still in your second SSH session, run this command:
 
-```
+```bash
 ngrok http [your VM's External IP]:8000
 ```
 
 You should see something like:
 
-```
+```markdown
 Session Status                online                                                                            
 Account                       [your-email]@gmail.com (Plan: Free)                                         
 Version                       3.XX.0                                                                            
@@ -564,19 +564,19 @@ Note you can use CTRL+C to stop this at any time. But don't do that. Let it run.
 
 Now, if you copy the first part of the text from your Ngrok session status above (i.e., "https://XXxX-XX-XXX-XXX-XX.ngrok-free.app"), paste it into your browser URL bar, then append "/greet" to the end of it (so, "https://XXxX-XX-XXX-XXX-XX.ngrok-free.app/greet"), and press enter, you should get the usual response:
 
-```
+```markdown
 {"message":["Hello from our R web service Bob!"]}
 ```
 
 And, similarly, if you use:
 
-```
+```markdown
 https://0ed6-35-192-176-13.ngrok-free.app/greet?name=Monica
 ```
 
 You should get:
 
-```
+```markdown
 {"message":["Hello from our R web service Monica!"]}
 ```
 
@@ -596,7 +596,7 @@ This will bring you to the Configure screen for your GPT. Give it a name -- such
 
 In the Instructions box, copy / paste the following:
 
-``` 
+```markdown
 Greet the user with a message that says, "Welcome to my Custom GPT that calls my R Plumber API via my Google Cloud web service!".
 
 Then, say, "This is how it works. You tell me your name, and then I understand that that's your name, and I send it off to the web service to get a greeting customized for that name. Sound good? Just type your name to get started!".
@@ -614,7 +614,7 @@ Now, under Actions, click the Create new action button.
 
 First, we will enter our Schema.  I used ChatGPT to create this. I provided it with my two plumber files and copy / pasted the "Forwarding" line from the ngrok Session Status, and then I asked it to create an Open API schema for the API for which I just shared the info with it. It took a few back-and-forths of copy / pasting what it gave me into the Schema box, seeing what error that produced, and then copy / pasting that error back into Chat to get the next iteration. But it ultimately landed on this -- a version that doesn't produce any errors and appears reasonable enough.
 
-```
+```markdown
 {
   "schema_version": "1.0",
   "name": "Plumber API Assistant",
