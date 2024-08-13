@@ -568,7 +568,7 @@ Log into your ChatGPT account. Click on the account icon in the top-right-hand c
 
 This will bring you to the Configure screen for your GPT. Give it a name -- such as "hello-ChatGPT-to-R". In the Description box, enter "Just send me a message that says 'hello' to get started!"
 
-In the Instructions box, copy / paste the following:
+In the Instructions box, copy / paste the following. Again, be sure to hover over this box with your cursor and scroll to the right to get everything.
 
 ```markdown
 Greet the user with a message that says, "Welcome to my Custom GPT that calls my R Plumber API via my Google Cloud web service!".
@@ -586,7 +586,7 @@ Then, say, "Thank you for trying me out! For more about how this all works, chec
 
 Now, under Actions, click the Create new action button.
 
-First, we will enter our Schema.  I used ChatGPT to create this. I provided it with my two plumber files and copy / pasted the "Forwarding" line from the ngrok Session Status, and then I asked it to create an Open API schema for the API for which I just shared the info with it. It took a few back-and-forths of copy / pasting what it gave me into the Schema box, seeing what error that produced, and then copy / pasting that error back into Chat to get the next iteration. But it ultimately landed on this -- a version that doesn't produce any errors and appears reasonable enough.
+First, we will enter our Schema.  I used ChatGPT to create this. I provided it with my two plumber files and copy / pasted the "Forwarding" line from the ngrok Session Status, and then I asked it to create an Open API schema for the API for which I just shared the info with it. It took a few back-and-forths of copy / pasting what it gave me into the Schema box, seeing what error that produced, and then copy / pasting that error back into Chat to get the next iteration. But it ultimately landed on this -- a version that doesn't produce any errors and appears reasonable enough. Again, be sure to hover over this box with your cursor and scroll to the right to get everything.
 
 ```json
 {
