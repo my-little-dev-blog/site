@@ -568,7 +568,7 @@ Log into your ChatGPT account. Click on the account icon in the top-right-hand c
 
 This will bring you to the Configure screen for your GPT. Give it a name -- such as "hello-ChatGPT-to-R". In the Description box, enter "Just send me a message that says 'hello' to get started!"
 
-In the Instructions box, copy / paste the following. Again, be sure to hover over this box with your cursor and scroll to the right to get everything.
+In the Instructions box, copy / paste the following. Be sure to hover over this box with your cursor and scroll to the right to get everything.
 
 ```markdown
 Greet the user with a message that says, "Welcome to my Custom GPT that calls my R Plumber API via my Google Cloud web service!".
