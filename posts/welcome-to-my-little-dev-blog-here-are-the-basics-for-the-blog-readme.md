@@ -1,4 +1,3 @@
-
 ---
 title: Welcome to my-little-dev-blog! Here are the basics for the blog (the README).
 layout: default
