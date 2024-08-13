@@ -30,7 +30,7 @@ Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/welcome-
 - Go to the [home page](https://my-little-dev-blog.github.io/site/)
 - Find a post you like
 - Scan or read it
-- Do one or more of the things in the ["How to contribute"](##how-to-contribute) section below
+- Do one or more of the things in the ["How to contribute"](#how-to-contribute) section below
 
 ### Along the way
 - Use tools such as ChatGPT and Perpexity -- and, of course, Google.
