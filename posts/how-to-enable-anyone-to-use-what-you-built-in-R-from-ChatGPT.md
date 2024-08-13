@@ -103,7 +103,7 @@ paste0("Hello from our R web service ", name, "!")
 Which, when run, produces:
 
 ```markdown
-Hello from our R web service Bob!
+> Hello from our R web service Bob!
 ```
 
 # Step 2: Turn your R code into an R function
@@ -127,7 +127,7 @@ sayHi("Monica")
 Produces:
 
 ```markdown
-Hello from our R web service Monica!
+> Hello from our R web service Monica!
 ```
 
 # Step 3: Turn your R function into an API using Plumber
@@ -363,7 +363,7 @@ ls
 This should return:
 
 ```markdown
-R  plumber_script.R  start_plumber.R
+> R  plumber_script.R  start_plumber.R
 ```
 
 Perfect.
@@ -377,8 +377,8 @@ Rscript start_plumber.R
 You will see the following in your Bash session:
 
 ```markdown
-Running plumber API at http://0.0.0.0:8000
-Running swagger Docs at http://127.0.0.1:8000/__docs__/
+> Running plumber API at http://0.0.0.0:8000
+> Running swagger Docs at http://127.0.0.1:8000/__docs__/
 ```
 
 Bingo. Your web service is running.
