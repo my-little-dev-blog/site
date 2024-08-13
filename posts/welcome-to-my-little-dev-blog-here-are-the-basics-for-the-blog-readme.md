@@ -1,9 +1,9 @@
 ---
-title: Welcome to my-little-dev-blog! Here are the basics for the blog (the README).
+title: Welcome to my-little-dev-blog! Here are the basics.
 layout: default
 ---
 
-# Welcome to my-little-dev-blog! Here are the basics for the blog (the README).
+# Welcome to my-little-dev-blog! Here are the basics.
 
 ---
 
