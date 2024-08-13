@@ -102,9 +102,7 @@ paste0("Hello from our R web service ", name, "!")
 
 Which, when run, produces:
 
-
 > Hello from our R web service Bob!
-
 
 # Step 2: Turn your R code into an R function
 
@@ -126,9 +124,7 @@ sayHi("Monica")
 
 Produces:
 
-```markdown
 > Hello from our R web service Monica!
-```
 
 # Step 3: Turn your R function into an API using Plumber
 
@@ -362,9 +358,7 @@ ls
 
 This should return:
 
-```markdown
 > R  plumber_script.R  start_plumber.R
-```
 
 Perfect.
 
@@ -376,10 +370,8 @@ Rscript start_plumber.R
 
 You will see the following in your Bash session:
 
-```markdown
 > Running plumber API at http://0.0.0.0:8000
 > Running swagger Docs at http://127.0.0.1:8000/__docs__/
-```
 
 Bingo. Your web service is running.
 
@@ -397,9 +389,7 @@ curl "http://127.0.0.1:8000/greet"
 
 You will see the following response from your web service:
 
-```markdown
-{"message":["Hello from our R web service Bob!"]}
-```
+> {"message":["Hello from our R web service Bob!"]}
 
 It is working!This is exactly what we programmed our Plumber API to do. The web service is returning its response in JSON format -- the standard format for web services.
 
@@ -411,9 +401,7 @@ curl "http://127.0.0.1:8000/greet?name=Monica"
 
 And you will see:
 
-```markdown
-{"message":["Hello from our R web service Monica!"]}
-```
+> {"message":["Hello from our R web service Monica!"]}
 
 Beautiful.
 
@@ -453,9 +441,7 @@ Be sure that when you paste your VM instance's external IP into your browser's U
 
 Your browser will show you the same response from your web service as when we interacted with it from within your VM's environment in Step 4.6 above.  That is:
 
-```markdown
-{"message":["Hello from our R web service Bob!"]}
-```
+> {"message":["Hello from our R web service Bob!"]}
 
 Voila! Now anyone who can use the internet can use your web service! It is working!
 
@@ -467,9 +453,7 @@ To show how the service can react dynamically, you can put this into your browse
 
 And you will see the same response as we did in Step 4.6 above:
 
-```markdown
-{"message":["Hello from our R web service Monica!"]}
-```
+> {"message":["Hello from our R web service Monica!"]}
 
 Beautiful.
 
@@ -511,9 +495,7 @@ ngrok version
 
 You should see something like:
 
-```bash
-ngrok version 3.xx.x
-```
+> ngrok version 3.xx.x
 
 ### Step 5.1.2: Create an Ngrok account
 
@@ -529,9 +511,7 @@ ngrok config add-authtoken [your authtoken goes here]
 
 You should see something like:
 
-```markdown
-Authtoken saved to configuration file: [...]/.config/ngrok/ngrok.yml
-```
+> Authtoken saved to configuration file: [...]/.config/ngrok/ngrok.yml
 
 Where [...] is the correct path prefix given how your VM is configured.
 
@@ -545,18 +525,16 @@ ngrok http [your VM's External IP]:8000
 
 You should see something like:
 
-```markdown
-Session Status                online                                                                            
-Account                       [your-email]@gmail.com (Plan: Free)                                         
-Version                       3.XX.0                                                                            
-Region                        United States (us)                                                                
-Latency                       XXms                                                                              
-Web Interface                 http://127.0.0.1:4040                                                             
-Forwarding                    https://XXxX-XX-XXX-XXX-XX.ngrok-free.app -> http://[your VM's External IP]:8000              
-                                                                                                                
-Connections                   ttl     opn     rt1     rt5     p50     p90                                       
-                              0       0       0.00    0.00    0.00    0.00         
-```
+> Session Status                online                                                                            
+> Account                       [your-email]@gmail.com (Plan: Free)                                         
+> Version                       3.XX.0                                                                            
+> Region                        United States (us)                                                                
+> Latency                       XXms                                                                              
+> Web Interface                 http://127.0.0.1:4040                                                             
+> Forwarding                    https://XXxX-XX-XXX-XXX-XX.ngrok-free.app -> http://[your VM's External IP]:8000              
+>                                                                                                                 
+> Connections                   ttl     opn     rt1     rt5     p50     p90                                       
+>                               0       0       0.00    0.00    0.00    0.00         
 
 Note you can use CTRL+C to stop this at any time. But don't do that. Let it run.  In order for ChatGPT to access your web service, you need both the Plumber part (i.e., "Rscript start_plumber.R") and the Ngrok part (i.e., "ngrok http [your VM's External IP]:8000") to be running.
 
@@ -564,9 +542,7 @@ Note you can use CTRL+C to stop this at any time. But don't do that. Let it run.
 
 Now, if you copy the first part of the text from your Ngrok session status above (i.e., "https://XXxX-XX-XXX-XXX-XX.ngrok-free.app"), paste it into your browser URL bar, then append "/greet" to the end of it (so, "https://XXxX-XX-XXX-XXX-XX.ngrok-free.app/greet"), and press enter, you should get the usual response:
 
-```markdown
-{"message":["Hello from our R web service Bob!"]}
-```
+> {"message":["Hello from our R web service Bob!"]}
 
 And, similarly, if you use:
 
@@ -576,9 +552,7 @@ https://0ed6-35-192-176-13.ngrok-free.app/greet?name=Monica
 
 You should get:
 
-```markdown
-{"message":["Hello from our R web service Monica!"]}
-```
+> {"message":["Hello from our R web service Monica!"]}
 
 Success!
 
@@ -614,7 +588,7 @@ Now, under Actions, click the Create new action button.
 
 First, we will enter our Schema.  I used ChatGPT to create this. I provided it with my two plumber files and copy / pasted the "Forwarding" line from the ngrok Session Status, and then I asked it to create an Open API schema for the API for which I just shared the info with it. It took a few back-and-forths of copy / pasting what it gave me into the Schema box, seeing what error that produced, and then copy / pasting that error back into Chat to get the next iteration. But it ultimately landed on this -- a version that doesn't produce any errors and appears reasonable enough.
 
-```markdown
+```json
 {
   "schema_version": "1.0",
   "name": "Plumber API Assistant",
