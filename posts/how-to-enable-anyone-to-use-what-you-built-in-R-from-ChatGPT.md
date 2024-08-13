@@ -27,7 +27,7 @@ In this post, I'll walk you through the process of turning a simple R script int
 2. [Turn your R code into an R function](#turn-your-r-code-into-an-r-function)
 3. [Turn your R function into an API using Plumber](#turn-your-r-function-into-an-api-using-plumber)
 4. [Turn your Plumber API into a publicly accessible web service using Google Cloud](#turn-your-plumber-api-into-a-publicly-accessible-web-service-using-google-cloud)
-5. [Turn your publicly accessible web service into a ChatGPT custom Action using a My GPT](#turn-your-publicly-accessible-web-service-into-a-chatgpt-custom-action-using-a-my-gpt)
+5. [Turn your publicly accessible Google Cloud web service into a ChatGPT custom Action using a My GPT](#turn-your-publicly-accessible-google-cloud-web-service-into-a-chatgpt-custom-action-using-a-my-gpt)
 
 ## Who is this post for?
 
@@ -457,7 +457,7 @@ And you will see the same response as we did in Step 4.6 above:
 
 Beautiful.
 
-# Step 5: Turn your publicly accessible web service into a ChatGPT custom Action using a My GPT
+# Step 5: Turn your publicly accessible Google Cloud web service into a ChatGPT custom Action using a My GPT
 
 Now we will enable ChatGPT users to interact with our web service natively from ChatGPT!
 
