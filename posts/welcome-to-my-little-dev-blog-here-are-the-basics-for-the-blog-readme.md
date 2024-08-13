@@ -33,7 +33,7 @@ Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/welcome-
 - Do one or more of the things in the ["How to contribute"](##how-to-contribute) section below
 
 ### Along the way
-- Use tools such as ChatGPT, Claude, Gemini, Perpexity, and Copilot -- and, of course, Google.
+- Use tools such as ChatGPT and Perpexity -- and, of course, Google.
 - For example:
   - Don't understand something? Copy / paste into Chat. Interact. Use Google to validate.
   - Wish there was more context? Same.
@@ -54,17 +54,20 @@ Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/welcome-
   - [Email me](mailto:your-email@example.com)
     
 - Improve an existing post
-  - Click link at bottom of blog pages
+  - Click link at bottom of blog pages (for more on how this works, you can see [this explanation from the UK government](https://design-system.service.gov.uk/community/propose-a-content-change-using-github/))
   - Here in this repo ([comment or discuss](https://github.com/my-little-dev-blog/site/discussions), [submit issue](https://github.com/my-little-dev-blog/site/issues), or [submit pull request](https://github.com/my-little-dev-blog/site/pulls))
   - [Email me](mailto:your-email@example.com)
     
 - Submit a new post
   - Here in this repo ([submit pull request](https://github.com/my-little-dev-blog/site/pulls))
   - [Email me](mailto:your-email@example.com)
+  
+- Tell me another way that I haven't thought of yet
+  - [Email me](mailto:your-email@example.com)
 
 ## How to attribute
 - Please use anything you like from the blog or this repo however you wish.
-- When you do, please properly credit it.
+- When you do, please properly credit it. This will help the blog spread, which will support the blog's purpose.
   - For example, just add: "From [my-little-dev-blog](https://my-little-dev-blog.github.io/site/) (License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))."
 
 ## License
