@@ -33,14 +33,14 @@ Click [here](https://github.com/my-little-dev-blog/site/blob/main/posts/welcome-
 - Do one or more of the things in the ["How to contribute"](#how-to-contribute) section below
 
 ### Along the way
-- Use tools such as ChatGPT and Perpexity -- and, of course, Google.
+- Use tools such as ChatGPT and Perpexity -- and, of course, Google
 - For example:
   - Don't understand something? Copy / paste into Chat. Interact. Use Google to validate.
   - Wish there was more context? Same.
   - Want to learn more about something? Same.
   - Want to Chat with a post instead of read it? Same.
   - Want to get a summary of the most up-to-date info on the web about this topic and find related sources? Same, except use Perplexity.
-- Be sure you have at least basic familiarity with at least ChatGPT and Perplexity prior to reading the posts.
+- Be sure you have at least basic familiarity with at least ChatGPT and Perplexity prior to reading the posts
 
 ## How to contribute
 
