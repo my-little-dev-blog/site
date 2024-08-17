@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://my-little-dev-blog.github.io/sitemap.xml
+Sitemap: https://my-little-dev-blog.github.io/site/sitemap.xml
