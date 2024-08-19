@@ -7,4 +7,3 @@ remote_theme: pages-themes/primer
 plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
-google_analytics: G-QHQCQF1QWM
