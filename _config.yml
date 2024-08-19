@@ -3,7 +3,7 @@ email: my.little.dev.blog@gmail.com
 description: A space for me to share learnings as I build software.
 baseurl: "/site"
 url: "https://my-little-dev-blog.github.io"
-remote_theme: pages-themes/primer@v0.2.0
+remote_theme: pages-themes/primer
 plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
