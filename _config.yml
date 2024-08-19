@@ -5,4 +5,3 @@ baseurl: "/site"
 url: "https://my-little-dev-blog.github.io"
 plugins:
   - jekyll-sitemap
-theme: minima
