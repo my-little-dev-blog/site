@@ -674,4 +674,3 @@ Basically no consideration at all has been given to security along the way here.
 ## Reactions and contributions are welcome!
 
 The best form you can share your feedback is in the form of pull requests that I can just review and then hopefully just accept -- so that your helpful comments take the form of instant improvements to the post. The next best form of feedback is thoughtfully articulated issues that you create here in the repo. Before you create an issue, please try to resolve the issue on your own first, and, if you aren't able to, please at least explain how you tried to, and please be sure to include enough information to reproduce the issue. The last best form of feedback is a thoughtful email to my.little.dev.blog@gmail.com. Please only send an email if you can't even begin to make an attempt at submitting a pull request or an issue. I'll still welcome your feedback even if it comes in this form, but may be less likely to get to it.
-

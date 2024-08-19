@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /site/google848feef33be64caf.html
 
 Sitemap: https://my-little-dev-blog.github.io/site/sitemap.xml
