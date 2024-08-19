@@ -1,5 +1,6 @@
 ---
-title: How to enable anyone to use what you built in R from ChatGPT
+title: How to enable anyone to use what you built in R from ChatGPT | my-little-dev-blog
+description: Learn how to transform your R scripts into accessible web services by creating a Plumber API, deploying it on Google Cloud, and integrating it with ChatGPT. This step-by-step guide is perfect for R developers looking to extend the usability of their code and create custom actions in ChatGPT. 
 layout: default
 ---
 
