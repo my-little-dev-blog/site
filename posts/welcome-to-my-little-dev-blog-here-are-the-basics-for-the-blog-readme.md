@@ -1,5 +1,6 @@
 ---
-title: Welcome to my-little-dev-blog! Here are the basics.
+title: Welcome to my-little-dev-blog! Here are the basics. | my-little-dev-blog
+description: Welcome to my-little-dev-blog! Explore insights on data science, AI, and rapid functional prototyping. Learn, contribute, and engage with a community focused on sharing knowledge and improving work through collaboration.
 layout: default
 ---
 
@@ -40,24 +41,24 @@ layout: default
 
 - Give me feedback
   - [Do this tiny survey](https://my-little-dev-blog.github.io/site/) (< 2 mins)
-  - [Email me](mailto:your-email@example.com)
+  - [Email me](mailto:my.little.dev.blog@gmail.com)
     
 - Share what you see here with others, comment on it, or discuss it
   - On social platforms
   - [Here in this repo](https://github.com/my-little-dev-blog/site/discussions)
-  - [Email me](mailto:your-email@example.com)
+  - [Email me](mailto:my.little.dev.blog@gmail.com)
     
 - Improve an existing post
   - Click link at bottom of blog pages (for more on how this works, you can see [this explanation from the UK government](https://design-system.service.gov.uk/community/propose-a-content-change-using-github/))
   - Here in this repo ([comment or discuss](https://github.com/my-little-dev-blog/site/discussions), [submit issue](https://github.com/my-little-dev-blog/site/issues), or [submit pull request](https://github.com/my-little-dev-blog/site/pulls))
-  - [Email me](mailto:your-email@example.com)
+  - [Email me](mailto:my.little.dev.blog@gmail.com)
     
 - Submit a new post
   - Here in this repo ([submit pull request](https://github.com/my-little-dev-blog/site/pulls))
-  - [Email me](mailto:your-email@example.com)
+  - [Email me](mailto:my.little.dev.blog@gmail.com)
   
 - Tell me another way that I haven't thought of yet
-  - [Email me](mailto:your-email@example.com)
+  - [Email me](mailto:my.little.dev.blog@gmail.com)
 
 ## How to attribute
 - Please use anything you like from the blog or this repo however you wish.
